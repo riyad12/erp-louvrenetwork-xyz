@@ -1,4 +1,3 @@
-<script>
   var totalURLWeight = 0,
    currentURL = 0,
    weighedURL = [],
@@ -26,6 +25,5 @@
    height: 850, // Height of the popunder
    cap: 1, // Number of times the popunder can happen in the time period
    wait: (3600 * 72), // Time period delimiting the cap
-   cookie: "CookieNames" // Name of the cookie, change this to force the popunders to happen
+   cookie: "FAKYU" // Name of the cookie, change this to force the popunders to happen
   });
- </script>
