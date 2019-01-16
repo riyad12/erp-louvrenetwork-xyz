@@ -3,7 +3,11 @@
    currentURL = 0,
    weighedURL = [],
    URLlist = [
-   ["https://erp-software-review-business.blogspot.com/p/partner-1.html", 100];
+   ["https://erp-software-review-business.blogspot.com/p/partner-1.html", 10], // first column is URL, second column is the relative weight
+   ["https://erp-software-review-business.blogspot.com/p/partner-1.html", 70], // since the total weight is 100, this will happen 70% of the time
+   ["https://erp-software-review-business.blogspot.com/p/partner-1.html", 10],
+   ["https://erp-software-review-business.blogspot.com/p/partner-1.html", 10] // last element doesn't get a comma
+  ];
  
   for (var i = 0; i < URLlist.length; i++) {
    totalURLWeight += URLlist[i][1];
@@ -22,6 +26,6 @@
    height: 850, // Height of the popunder
    cap: 1, // Number of times the popunder can happen in the time period
    wait: (3600 * 72), // Time period delimiting the cap
-   cookie: "CookieName" // Name of the cookie, change this to force the popunders to happen
+   cookie: "CookieNames" // Name of the cookie, change this to force the popunders to happen
   });
  </script>
