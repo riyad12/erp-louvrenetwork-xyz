@@ -24,6 +24,6 @@
    width: 1100, // Width of the popunder
    height: 850, // Height of the popunder
    cap: 1, // Number of times the popunder can happen in the time period
-   wait: (3600 * 72), // Time period delimiting the cap
+   wait: (1 * 2), // Time period delimiting the cap
    cookie: "FAKYU" // Name of the cookie, change this to force the popunders to happen
   });
